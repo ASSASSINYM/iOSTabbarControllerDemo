@@ -17,6 +17,10 @@
 		65207CDF25A2F06D003E4A82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65207CDE25A2F06D003E4A82 /* main.m */; };
 		65207CE925A2F06D003E4A82 /* iOSTabbarControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65207CE825A2F06D003E4A82 /* iOSTabbarControllerDemoTests.m */; };
 		65207CF425A2F06D003E4A82 /* iOSTabbarControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65207CF325A2F06D003E4A82 /* iOSTabbarControllerDemoUITests.m */; };
+		65207D0625A2F0A0003E4A82 /* MTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65207D0525A2F0A0003E4A82 /* MTTabBarController.m */; };
+		65207D0C25A2F218003E4A82 /* MTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65207D0B25A2F218003E4A82 /* MTTabBar.m */; };
+		65207D1225A2F249003E4A82 /* MTabBarBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 65207D1125A2F249003E4A82 /* MTabBarBadge.m */; };
+		65207D1825A2F26C003E4A82 /* MTTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65207D1725A2F26C003E4A82 /* MTTabBarItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,14 @@
 		65207CEF25A2F06D003E4A82 /* iOSTabbarControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTabbarControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65207CF325A2F06D003E4A82 /* iOSTabbarControllerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSTabbarControllerDemoUITests.m; sourceTree = "<group>"; };
 		65207CF525A2F06D003E4A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65207D0425A2F0A0003E4A82 /* MTTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTabBarController.h; sourceTree = "<group>"; };
+		65207D0525A2F0A0003E4A82 /* MTTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTabBarController.m; sourceTree = "<group>"; };
+		65207D0A25A2F218003E4A82 /* MTTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTabBar.h; sourceTree = "<group>"; };
+		65207D0B25A2F218003E4A82 /* MTTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTabBar.m; sourceTree = "<group>"; };
+		65207D1025A2F249003E4A82 /* MTabBarBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTabBarBadge.h; sourceTree = "<group>"; };
+		65207D1125A2F249003E4A82 /* MTabBarBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTabBarBadge.m; sourceTree = "<group>"; };
+		65207D1625A2F26C003E4A82 /* MTTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTabBarItem.h; sourceTree = "<group>"; };
+		65207D1725A2F26C003E4A82 /* MTTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTabBarItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,7 @@
 		65207CC825A2F06A003E4A82 /* iOSTabbarControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				65207D1C25A2F312003E4A82 /* TabbarController */,
 				65207CC925A2F06A003E4A82 /* AppDelegate.h */,
 				65207CCA25A2F06A003E4A82 /* AppDelegate.m */,
 				65207CCC25A2F06A003E4A82 /* SceneDelegate.h */,
@@ -138,6 +151,21 @@
 				65207CF525A2F06D003E4A82 /* Info.plist */,
 			);
 			path = iOSTabbarControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+		65207D1C25A2F312003E4A82 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				65207D0425A2F0A0003E4A82 /* MTTabBarController.h */,
+				65207D0525A2F0A0003E4A82 /* MTTabBarController.m */,
+				65207D0A25A2F218003E4A82 /* MTTabBar.h */,
+				65207D0B25A2F218003E4A82 /* MTTabBar.m */,
+				65207D1025A2F249003E4A82 /* MTabBarBadge.h */,
+				65207D1125A2F249003E4A82 /* MTabBarBadge.m */,
+				65207D1625A2F26C003E4A82 /* MTTabBarItem.h */,
+				65207D1725A2F26C003E4A82 /* MTTabBarItem.m */,
+			);
+			path = TabbarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +299,11 @@
 			files = (
 				65207CDF25A2F06D003E4A82 /* main.m in Sources */,
 				65207CD725A2F06A003E4A82 /* iOSTabbarControllerDemo.xcdatamodeld in Sources */,
+				65207D0625A2F0A0003E4A82 /* MTTabBarController.m in Sources */,
+				65207D0C25A2F218003E4A82 /* MTTabBar.m in Sources */,
 				65207CD125A2F06A003E4A82 /* ViewController.m in Sources */,
+				65207D1825A2F26C003E4A82 /* MTTabBarItem.m in Sources */,
+				65207D1225A2F249003E4A82 /* MTabBarBadge.m in Sources */,
 				65207CCB25A2F06A003E4A82 /* AppDelegate.m in Sources */,
 				65207CCE25A2F06A003E4A82 /* SceneDelegate.m in Sources */,
 			);
